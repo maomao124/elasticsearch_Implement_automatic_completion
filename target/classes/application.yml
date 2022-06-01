@@ -1,0 +1,149 @@
+
+#多环境开发---单文件
+spring:
+  profiles:
+    # 当前环境
+    active: dev
+
+#-----通用环境---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+---
+#------开发环境--------------------------------------------------------
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+
+
+
+
+
+
+
+
+
+# 开启debug模式，输出调试信息，常用于检查系统运行状况
+#debug: true
+
+# 设置日志级别，root表示根节点，即整体应用日志级别
+logging:
+ # 日志输出到文件的文件名
+  file:
+     name: server.log
+  # 字符集
+  charset:
+    file: UTF-8
+  # 分文件
+  logback:
+    rollingpolicy:
+      #最大文件大小
+      max-file-size: 16KB
+      # 文件格式
+      file-name-pattern: server_log-%d{yyyy/MM月/dd日/}%i.log
+  # 设置日志组
+  group:
+  # 自定义组名，设置当前组中所包含的包
+    mao_pro: mao
+  level:
+    root: info
+    # 为对应组设置日志级别
+    mao_pro: debug
+    # 日志输出格式
+# pattern:
+  # console: "%d %clr(%p) --- [%16t] %clr(%-40.40c){cyan} : %m %n"
+
+
+
+
+---
+#----生产环境----------------------------------------------------
+
+
+spring:
+  config:
+    activate:
+      on-profile: pro
+
+
+
+#  # 配置数据源
+#  datasource:
+#    # driver-class-name: ${jdbc.driver}
+#    # url: ${jdbc.url}
+#    # username: ${jdbc.username}
+#    # password: ${jdbc.password}
+#    # 配置数据源-druid
+#    druid:
+#      driver-class-name: ${jdbc.driver}
+#      url: ${jdbc.url}
+#      username: ${jdbc.username}
+#      password: ${jdbc.password}
+
+
+
+# 开启debug模式，输出调试信息，常用于检查系统运行状况
+#debug: true
+
+# 设置日志级别，root表示根节点，即整体应用日志级别
+logging:
+  # 日志输出到文件的文件名
+  file:
+    name: server.log
+  # 字符集
+  charset:
+    file: UTF-8
+  # 分文件
+  logback:
+    rollingpolicy:
+      #最大文件大小
+      max-file-size: 4MB
+      # 文件格式
+      file-name-pattern: server_log-%d{yyyy/MM月/dd日/}%i.log
+  # 设置日志组
+  group:
+    # 自定义组名，设置当前组中所包含的包
+    mao_pro: mao
+  level:
+    root: info
+    # 为对应组设置日志级别
+    mao_pro: warn
+    # 日志输出格式
+  # pattern:
+  # console: "%d %clr(%p) --- [%16t] %clr(%-40.40c){cyan} : %m %n"
+
+
+
+
+
+---
+#----测试环境-----------------------------------------------------
+
+spring:
+  config:
+    activate:
+      on-profile: test
+
+
+
+#  # 配置数据源
+#  datasource:
+#    # driver-class-name: ${jdbc.driver}
+#    # url: ${jdbc.url}
+#    # username: ${jdbc.username}
+#    # password: ${jdbc.password}
+#    # 配置数据源-druid
+#    druid:
+#      driver-class-name: ${jdbc.driver}
+#      url: ${jdbc.url}
+#      username: ${jdbc.username}
+#      password: ${jdbc.password}
