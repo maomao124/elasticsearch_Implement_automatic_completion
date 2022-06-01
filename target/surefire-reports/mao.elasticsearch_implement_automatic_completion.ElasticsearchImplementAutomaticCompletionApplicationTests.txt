@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: mao.elasticsearch_implement_automatic_completion.ElasticsearchImplementAutomaticCompletionApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.086 s - in mao.elasticsearch_implement_automatic_completion.ElasticsearchImplementAutomaticCompletionApplicationTests

@@ -1,0 +1,10 @@
+2022-06-01 21:09:55.020  INFO 20268 --- [main] hImplementAutomaticCompletionApplication : Starting ElasticsearchImplementAutomaticCompletionApplication v0.0.1-SNAPSHOT using Java 16.0.2 on mao with PID 20268 (H:\程序\大三下期\elasticsearch实现自动补全\target\elasticsearch_Implement_automatic_completion-0.0.1-SNAPSHOT.jar started by mao in H:\程序\大三下期\elasticsearch实现自动补全\target)
+2022-06-01 21:09:55.023 DEBUG 20268 --- [main] hImplementAutomaticCompletionApplication : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-01 21:09:55.024  INFO 20268 --- [main] hImplementAutomaticCompletionApplication : The following 1 profile is active: "dev"
+2022-06-01 21:09:56.203  INFO 20268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-01 21:09:56.214  INFO 20268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-01 21:09:56.215  INFO 20268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-01 21:09:56.312  INFO 20268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-01 21:09:56.313  INFO 20268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2022-06-01 21:09:57.190  INFO 20268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-01 21:09:57.203  INFO 20268 --- [main] hImplementAutomaticCompletionApplication : Started ElasticsearchImplementAutomaticCompletionApplication in 2.808 seconds (JVM running for 3.293)
